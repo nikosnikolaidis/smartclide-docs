@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://eclipse-opensmartclide.github.io/smartclide-docs/getting-started-developer/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Getting Started - The SmartCLIDE IDE</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">The SmartCLIDE IDE</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">For the developer <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Getting Started</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Workflows</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../workflows/" class="dropdown-item">Getting Started</a>
+</li>
+            
+<li>
+    <a href="../workflows/example1/" class="dropdown-item">Example 1</a>
+</li>
+            
+<li>
+    <a href="../workflows/example2/" class="dropdown-item">Example 2</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="navitem">
+                                <a href="../getting-started-sysadmin/" class="nav-link">For the sysadmin</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../workflows/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#for-the-developer" class="nav-link">For the developer</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#registration-and-login" class="nav-link">Registration and login</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#setting-up-profile" class="nav-link">Setting up profile</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#building-the-first-service" class="nav-link">Building the first service</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="for-the-developer">For the developer</h1>
+<p>This page contains some very-easy-to-follow guides for developers to start building services using the SmartCLIDE IDE.</p>
+<h2 id="registration-and-login">Registration and login</h2>
+<div style="text-align: justify;">
+    <p>
+        The first thing a developer needs to do in order to start using the SmartCLIDE IDE, is to navigate to the <a href="https://ide.che.smartclide.eu/">SmartCLIDE IDE landing page</a>:
+    </p>
+</div>
+
+<p><img alt="The SmartCLIDE IDE Landing Page" src="../img/smartclide-ide-landing-page.png" /></p>
+<div style="text-align: justify;">
+    <p>
+        Then, by hitting the 'SmartCLIDE Eclipse Che' button, the user is redirected to the SmartCLIDE Login Page:  
+    </p>
+</div>
+
+<p><img alt="The SmartCLIDE IDE Login Page" src="../img/smartclide-ide-login-page.png" /></p>
+<div style="text-align: justify;">
+    <p>
+        From there, the developer hits the "Register" button, and is redirected to the SmartCLIDE IDE Registration Page:
+    </p>
+</div>
+
+<p><img alt="The SmartCLIDE IDE Registration Page" src="../img/smartclide-ide-registration-page.png" /></p>
+<div style="text-align: justify;">
+    <p>
+        After the developer has filled in his details, a verification link is sent through email to the email account that he provided, and the following page is presented to the user:
+    </p>
+</div>
+
+<p><img alt="The SmartCLIDE IDE Email Verification Page" src="../img/smartclide-ide-email-verification-page.png" /></p>
+<div style="text-align: justify;">
+    <p>
+        The user clicks the verification link sent to him in order to verify his account. Then, he can navigate back to the SmartCLIDE Login Page, enter his credentials and log into the SmartCLIDE IDE. After that, the SmartCLIDE Main Page is presented to the user:
+    </p>
+</div>
+
+<p><img alt="The SmartCLIDE Main Page" src="../img/smartclide-ide-main-page.png" /></p>
+<h2 id="setting-up-profile">Setting up profile</h2>
+<div style="text-align: justify;">
+    <p>
+        After landing to the SmartCLIDE Main Page, the developer can edit his profile by clicking the little human icon in the upper right corner, and then clicking on the "My Account" option. By doing this, he is redirected to the SmartCLIDE Profile Editing Page:
+    </p>
+</div>
+
+<p><img alt="The SmartCLIDE Profile Editing Page" src="../img/smartclide-ide-profile-editing-page.png" /></p>
+<div style="text-align: justify;">
+    <p>
+        From the SmartCLIDE Profile Editing Page the user can edit his security credentials (SmartCLIDE uses <a href="https://www.keycloak.org/">Keycloak</a> for user authentication and authorization), like email, first name, last name and password. In addition, by clicking on the "Credentials" option the user is redirected to a new view where he can add credentials related to source control repositories (e.g., GitHub credentials), CI/CD managers (e.g., Jenkins) and Deployment Platforms.
+    </p>
+</div>
+
+<p><img alt="The SmartCLIDE Credentials Page" src="../img/smartclide-ide-credentials-page.png" /></p>
+<div style="text-align: justify;">
+    <p>
+        For example, if the user wants to connect his GitHub profile with the SmartCLIDE IDE, he can add his credentials by clicking the '+' icon in the upper right corner, and fill the requested fields in the form that opens (i.e., Type->GitHub, GitHub URL, username and GitHub Personal Access Token). 
+    </p>
+</div>
+
+<p><img alt="The SmartCLIDE Git Page" src="../img/smartclide-ide-git-page.png" /></p>
+<h2 id="building-the-first-service">Building the first service</h2></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright &copy; 2022 The SmartCLIDE Consortium</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
